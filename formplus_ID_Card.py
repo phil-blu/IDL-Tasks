@@ -56,7 +56,7 @@ for url in link_list:
     
     #Saving the image with unique filenames
     for file_name in file_names:
-        with open(file_name+"_ID"+'.jpg', 'wb') as f:
+        with open(str(file_name)+"_ID"+'.jpg', 'wb') as f:
             image = requests.get(img_url)
             f.write(image.content)
     
